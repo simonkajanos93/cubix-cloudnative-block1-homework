@@ -59,7 +59,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Verify Docker image
       - name: Log in to GitHub Container Registry
         run: docker login ghcr.io -u simonkajanos93 -p ${{ github.token }}
       - name: Run verify script
